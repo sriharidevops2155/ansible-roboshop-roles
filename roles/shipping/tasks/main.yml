@@ -11,9 +11,9 @@
 - name: import data 
   community.mysql.mysql_db:
     name: all
-    login_user: root
-    login_password: RoboShop@1
-    login_host: cart.daws84s.cloud
+    login_user: "{{ MYSQL_ROOT_USER }}"
+    login_password: "{{ MYSQL_ROOT_PASSWORD }}"
+    login_host: "{{ MYSQL_HOST }}"
     state: import 
     target: "{{ item }}"
   loop: 

@@ -1,0 +1,3 @@
+CART_HOST: cart.daws84s.cloud
+USER_HOST: user.daws84s.cloud
+RABBITMQ_HOST: rabbitmq.daws84s.cloud
