@@ -1,14 +1,14 @@
+- name: Create app directory 
+  file: 
+    path: /app 
+    state: directory
+
 - name: Create roboshop system user 
   user: 
     name: roboshop
     shell: /sbin/nologin
     system: true 
     home: /app
-
-- name: Create app directory 
-  file: 
-    path: /app 
-    state: directory
 
 - name: "Download the {{ component }} code"
   get_url:
