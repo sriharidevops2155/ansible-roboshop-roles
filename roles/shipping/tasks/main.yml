@@ -8,6 +8,11 @@
     name: common
     tasks_from: maven-setup
 
+- name: install mysql 
+  dnf:
+    name: mysql
+    state: present
+
 - name: import data 
   community.mysql.mysql_db:
     name: all
