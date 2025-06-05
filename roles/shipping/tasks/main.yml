@@ -11,7 +11,7 @@
 - name: install mysql 
   dnf:
     name: mysql
-    state: present
+    state: installed
 
 - name: import data 
   community.mysql.mysql_db:
