@@ -21,7 +21,3 @@
     src: "/tmp/{{ component }}.zip"
     dest: /app
     remote_src: yes  # File already exist in catalogue server 
-
-- name: Install dependencies 
-  community.general.npm:
-    path: /app
