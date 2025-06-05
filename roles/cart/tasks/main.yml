@@ -1,0 +1,14 @@
+- name: nodejs setup for cart app
+  include_role:
+    name: common
+    tasks_from: nodejs 
+
+- name: app setup for cart app 
+  include_role:
+    name: common
+    tasks_from: app-setup
+
+- name: Systemd service setup for cart app 
+  include_role:
+    name: common
+    tasks_from: systemd
