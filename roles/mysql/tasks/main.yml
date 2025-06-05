@@ -1,0 +1,13 @@
+- name: install mysql-server
+  dnf:
+    name: mysql-server
+    state: installed 
+  
+- name: Start MySQL Service
+  service:
+    name: mysqld
+    state: started 
+    enabled: yes 
+
+- name: Setup root password 
+  command: mysql_secure_installation --set-root-pass RoboShop@1
