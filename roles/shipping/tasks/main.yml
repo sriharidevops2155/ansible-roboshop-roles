@@ -8,11 +8,6 @@
     name: common
     tasks_from: maven-setup
 
-- name: Shipping service setup
-  include_role:
-    name: common
-    tasks_from: systemd
-
 - name: install mysql 
   dnf:
     name: mysql
