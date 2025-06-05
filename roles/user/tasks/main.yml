@@ -6,7 +6,7 @@
 - name: appsetup 
   include_role:
     name: common
-    tasks_from: appsetup
+    tasks_from: app-setup
 
 - name: system setup 
   include_role:
