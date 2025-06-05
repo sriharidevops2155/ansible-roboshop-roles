@@ -1,12 +1,12 @@
 - name: Shipping app setup
   include_role:
     name: common
-    task_from: app-setup
+    tasks_from: app-setup
 
 - name: Shipping maven setup
   include_role:
     name: common
-    task_from: maven-setup
+    tasks_from: maven-setup
 
 - name: import data 
   community.mysql.mysql_db:
@@ -24,4 +24,4 @@
 - name: Shipping service setup
   include_role:
     name: common
-    task_from: systemd
+    tasks_from: systemd
