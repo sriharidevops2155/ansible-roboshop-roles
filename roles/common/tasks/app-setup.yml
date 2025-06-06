@@ -12,7 +12,7 @@
 
 - name: "Download the {{ component }} code"
   get_url:
-    url: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}.zip"
+    url: "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v3.zip"
     dest: "/tmp/{{ component }}.zip"
   
 # This module thinks file exist on ansible control server, need to extract on to remote machine 
