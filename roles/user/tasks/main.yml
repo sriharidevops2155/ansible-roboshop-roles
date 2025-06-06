@@ -1,12 +1,12 @@
+- name: appsetup 
+  include_role:
+    name: common
+    tasks_from: appetup
+
 - name: nodejs setup
   include_role:
     name: common
     tasks_from: nodejs
-
-- name: appsetup 
-  include_role:
-    name: common
-    tasks_from: app-setup
 
 - name: system setup 
   include_role:
