@@ -2,7 +2,7 @@
   hosts:  "{{ component }}"
   become: yes 
   vars-files: 
-  - vault/mysql.yml
+    - vault/mysql.yml
   roles: #This will automatically load a folder called roles in current working directory 
     - "{{ component }}"
   
