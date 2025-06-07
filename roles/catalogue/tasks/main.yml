@@ -22,6 +22,7 @@
   command: mongosh --host mongodb.daws84s.cloud --eval 'db.getMongo().getDBNames().indexOf("catalogue")'
   register: catalogue_output
   ignore_unreachable: true
+# ignore_error: true   
 
 - name: print catalogue output
   debug:
@@ -32,6 +33,7 @@
   ansible.builtin.shell: mongosh --host mongodb.daws84s.cloud < /app/db/master-data.js
   when: catalogue_output.stdout | int < 0
   ignore_unreachable: true
+# ignore_error: true 
 
 - name: Systemd Setup 
   include_role: 
