@@ -15,7 +15,7 @@
 
 - name: install mongodb server
   dnf: 
-    name: mongodb-mongosh
+    name: mongodb- mongosh
     state: present
 
 - name: check products loaded or not
@@ -34,3 +34,8 @@
   include_role: 
     name: common
     tasks_from: systemd
+
+- name: Deployment for catalogue
+  include_role: 
+    name: common
+    tasks_from: deployment
