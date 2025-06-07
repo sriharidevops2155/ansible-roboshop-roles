@@ -1,6 +1,4 @@
 - name: Stop the service 
-  tags:
-    - deployment
   service: 
     name: "{{ component }}"
     state: stopped 
@@ -22,10 +20,8 @@
     remote_src: yes 
   
 - name: Install dependencies
-  tags:
-    - deployment
   community.general.npm: 
-  path: /app
+   path: /app
 
 - name: Restart {{ component }}
   service: 
