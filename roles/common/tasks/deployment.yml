@@ -15,7 +15,7 @@
 
 - name: download latest version code to /app directory
   unarchive: 
-    url : "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v{{ version_number }}.zip"
+    src : "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v{{ version_number }}.zip"
     dest: /app 
     remote_src: yes 
   
