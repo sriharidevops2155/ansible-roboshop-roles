@@ -42,6 +42,8 @@
     tasks_from: systemd
 
 - name: Deployment for catalogue
-  include_role: 
+  tags: 
+    - deployment
+  import_role: 
     name: common
     tasks_from: deployment
