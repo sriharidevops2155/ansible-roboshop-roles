@@ -44,7 +44,7 @@
   - name: configuring nginx .conf file 
     template:
       src: nginx.conf.j2
-      dest: /etc/nginx/nginx.conf
+      dest: /etc/nginx/nginx.conf #Here we can give list of handlers to 
     notify: 
       - restart nginx 
   

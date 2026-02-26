@@ -3,3 +3,5 @@
   become: yes 
   roles: #This will automatically load a folder called roles in current working directory 
     - mongodb
+
+# roles is there in my current directory and it will load the roles directory and in that we sare saying to load mongodb 
