@@ -13,7 +13,7 @@
     path: /app
     state: directory
 
-- name: download latest version code to /app directory
+- name: download latest version code to /app directory    # It will download the file from internet and unarchieve directly.
   unarchive: 
     src : "https://roboshop-artifacts.s3.amazonaws.com/{{ component }}-v{{ version_number }}.zip"
     dest: /app 
